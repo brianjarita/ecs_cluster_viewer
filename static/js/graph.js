@@ -69,8 +69,6 @@ request.onload = function() {
         for(i=0; i<data.taskDefinitions.length; i=i+1) {
             legendBefore.insertAdjacentHTML("beforebegin",
                 '<div class="legend-task"><div class="legend-task-color" style="background-color: ' + colorPallete[i] + '"></div><span>' + data.taskDefinitions[i].name + '</span></div>');
-            legendBefore.insertAdjacentHTML("beforebegin",
-                '<div class="legend-task"><div class="legend-task-color" style="background-color: ' + colorPallete[i] + '"></div><span>' + data.taskDefinitions[i].name + '</span></div>');
         }
         document.getElementById("main-title").innerHTML = clusterName + " cluster";
         document.title = clusterName + " cluster";
